@@ -1554,7 +1554,7 @@
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 18pt;
-		font-weight: 350;
+		font-weight: 320;
 		line-height: 1.5em;
 		color: #888;
 	}
@@ -1573,13 +1573,13 @@
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 18pt;
-		font-weight: 350;
+		font-weight: 320;
 		line-height: 1.5em;
 		color: #888;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
+		font-weight: 380;
 		color: #666;
 		line-height: 1.5em;
 	}
@@ -1623,7 +1623,7 @@
 	}
 
 	strong, b {
-		font-weight: 400;
+		font-weight: 375;
 		color: #666;
 	}
 
