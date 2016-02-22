@@ -2539,11 +2539,12 @@
 	
 	/* Lightbox */
 	
-	#page-wrap {
+	   #page-wrap {
 		  margin: 0 auto;
 		  position: relative;
 		  width: 980px;
 		}
+		
 		#gallery {
 		  display: table;
 		  margin: 0 auto;
