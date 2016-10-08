@@ -14,6 +14,98 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+				 #page-wrap {
+		  margin: 0 auto;
+		  position: relative;
+		  width: 980px;
+		}
+		
+		#gallery {
+		  display: table;
+		  margin: 0 auto;
+		}
+		#gallery li {
+		  float: left;
+		  margin: 10px 20px 0 0;
+		  position: relative;
+		}
+		/*#gallery span {
+		  background: rgba(0, 0, 0, 0.7);
+		  opacity: 0;
+		  padding: 10% 0;
+		  width: 100%;
+		  text-align: center;
+		  position: absolute;
+		  left: 0;
+		  bottom: 0;
+		  -moz-transition: opacity 0.6s ease-in;
+		  -o-transition: opacity 0.6s ease-in;
+		  -webkit-transition: opacity 0.6s ease-in;
+		}*/
+		
+		#gallery li:hover span {
+		  opacity: 1;
+		}
+		
+		#gallery a {
+		  /*border: 5px solid rgba(0, 0, 0, 0.1);*/
+		  display: block;
+		  position: relative;
+		  -moz-transition: border 0.6s ease-out;
+		  -webkit-transition: border 0.6s ease-out;
+		  transition: border 0.6s ease-out;
+		}
+		
+	/*:*#gallery a:hover {
+		
+		  border: 5px solid rgba(39, 25, 0, 1);
+		  border: 5px solid rgba(0, 0, 0, 0.5);
+		 
+		}*/
+		
+		#gallery a:focus {
+		  -moz-transform: rotate(-2deg);
+		  -webkit-transform: rotate(-2deg);
+		  transform: rotate(-2deg);
+		}
+		#gallery img {
+		  float: left;
+		}
+		#lightbox div {
+		  background: #fff;
+		  border: 30px solid #fff;
+		  opacity: 0;
+		  position: absolute;
+		  left: 0;
+		  top: 15%;
+		  z-index: 0;
+		  border-radius: 10px;
+		  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+		  -webkit-transition: all 0.3s ease-out;
+		  -moz-transition: all 0.3s ease-out;
+		  transition: all 0.3s ease-out;
+		}
+		#lightbox div:target {
+		  opacity: 1;
+		  z-index:10
+		}
+		#lightbox img {
+		  float: left;
+		  border-radius: 3px;
+		}
+		#lightbox #img2 {
+		  left: 15%;
+		}
+		#lightbox a {
+		  background: url(images/close.png) no-repeat left top;
+		  height: 28px;
+		  width: 30px;
+		  position: absolute;
+		  top: -42px;
+		  right: -42px;
+		}
+		</style>
 	</head>
 	<body>
 
@@ -90,21 +182,69 @@
 								</br><b>-Musical composition, catchy and cliché with a electronic swing tone</b>
 								</br><b>-Audio planning and management within the team and my own workflow</b>
 								</br>
+								<div id="page-wrap">
+											<div id="lightbox">
+												<div id="State-Event">
+													<img src="images/Capturewwisebib1.jpg" width="950" alt="" />
+													<a class="close" href="#"></a>
+												</div>
+												<div id="Footsteps-composition">
+													<img src="images/Capturewwisebib2.jpg" width="1100" alt="" />
+													<a class="close" href="#"></a>
+												</div>
+												<div id="Music-transitions">
+													<img src="images/Capturewwisebib3.jpg" width="1100" alt="" />
+													<a class="close" href="#"></a>
+												</div>
+												<div id="Music-parameters">
+													<img src="images/Capturewwisebib4.jpg" width="1100" alt="" />
+													<a class="close" href="#"></a>
+												</div>
+											</div>
+										
+											<ul id="gallery">
+											<li>
+											  <a class="clearfix" href="#State-Event">
+												<img src="images/Capturewwisebib1_small.jpg" alt="PureData1" width="277" />
+											
+											  </a>
+											</li>
+											<li>
+											  <a class="clearfix" href="#Footsteps-composition">
+												<img src="images/Capturewwisebib2_small.jpg" alt="PureData2" width="277" />
+											
+											  </a>
+											</li>
+											<li>
+											  <a class="clearfix" href="#Music-transitions">
+												<img src="images/Capturewwisebib3_small.jpg" alt="PureData2" width="277" />
+											
+											  </a>
+											</li>
+											<li>
+											  <a class="clearfix" href="#Music-parameters">
+												<img src="images/Capturewwisebib4_small.jpg" alt="PureData2" width="277" />
+											
+											  </a>
+											</li>
+									
+											</ul>
+								</div>
+								</br>
+								</br>
+								<p>Watch the following sneak peak at our vertical-slice demo from March 2016 :</p>
 								
-								<p>While waiting for the final prototype that will be available at the end of March, here are some sneak peaks at the game</p>
-								</br><p>These are some sounds that are still in production, the music is coming soon! </p>
+								<iframe width="650" height="366" src="https://www.youtube.com/embed/YhsDo-wRZeI?start=172" frameborder="0" allowfullscreen></iframe>
+								</br>
+								</br>
+								<p>Here are some isolated assets I created</p>
+							
 								<iframe width="60%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248475993%3Fsecret_token%3Ds-740aD&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 								<iframe width="60%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248475992%3Fsecret_token%3Ds-fAbhd&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 								<iframe width="60%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248475988%3Fsecret_token%3Ds-kv3sb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 								<iframe width="60%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248475991%3Fsecret_token%3Ds-qNwJn&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 								<iframe width="60%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/248475990%3Fsecret_token%3Ds-KuDBG&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 								
-								
-								</br><img src="images/LabScreenshot.png" alt="" />
-								</br><p>(come back later for a video capture from the current prototype)</p>
-								</br>
-								<!--<iframe src="VIDEO DU PROTO"></iframe>-->
-								</br>
 								
 								</br>
 								<p>(Realised in 2015)</p>
