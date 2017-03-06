@@ -1,0 +1,230 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<title>Gaspard Morel - Bring it Back!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+				 #page-wrap {
+		  margin: 0 auto;
+		  position: relative;
+		  width: 980px;
+		}
+		
+		#gallery {
+		  display: table;
+		  margin: 0 auto;
+		}
+		#gallery li {
+		  float: left;
+		  margin: 10px 20px 0 0;
+		  position: relative;
+		}
+		/*#gallery span {
+		  background: rgba(0, 0, 0, 0.7);
+		  opacity: 0;
+		  padding: 10% 0;
+		  width: 100%;
+		  text-align: center;
+		  position: absolute;
+		  left: 0;
+		  bottom: 0;
+		  -moz-transition: opacity 0.6s ease-in;
+		  -o-transition: opacity 0.6s ease-in;
+		  -webkit-transition: opacity 0.6s ease-in;
+		}*/
+		
+		#gallery li:hover span {
+		  opacity: 1;
+		}
+		
+		#gallery a {
+		  /*border: 5px solid rgba(0, 0, 0, 0.1);*/
+		  display: block;
+		  position: relative;
+		  -moz-transition: border 0.6s ease-out;
+		  -webkit-transition: border 0.6s ease-out;
+		  transition: border 0.6s ease-out;
+		}
+		
+	/*:*#gallery a:hover {
+		
+		  border: 5px solid rgba(39, 25, 0, 1);
+		  border: 5px solid rgba(0, 0, 0, 0.5);
+		 
+		}*/
+		
+		#gallery a:focus {
+		  -moz-transform: rotate(-2deg);
+		  -webkit-transform: rotate(-2deg);
+		  transform: rotate(-2deg);
+		}
+		#gallery img {
+		  float: left;
+		}
+		#lightbox div {
+		  background: #fff;
+		  border: 30px solid #fff;
+		  opacity: 0;
+		  position: absolute;
+		  left: 0;
+		  top: 15%;
+		  z-index: 0;
+		  border-radius: 10px;
+		  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+		  -webkit-transition: all 0.3s ease-out;
+		  -moz-transition: all 0.3s ease-out;
+		  transition: all 0.3s ease-out;
+		}
+		#lightbox div:target {
+		  opacity: 1;
+		  z-index:10
+		}
+		#lightbox img {
+		  float: left;
+		  border-radius: 3px;
+		}
+		#lightbox #img2 {
+		  left: 15%;
+		}
+		#lightbox a {
+		  background: url(images/close.png) no-repeat left top;
+		  height: 28px;
+		  width: 30px;
+		  position: absolute;
+		  top: -42px;
+		  right: -42px;
+		}
+		</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							
+							<h1 id="title">Gaspard Morel</h1>
+							<p>Audio Designer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="/index.html#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Welcome</span></a></li>
+								<li><a href="/index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="/index.html#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="/index.html#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a target="_blank" href="https://twitter.com/soundingg" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="https://soundcloud.com/gugus-2" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
+							<li><a target="_blank" href="https://fr.linkedin.com/pub/gaspard-morel/36/26b/7b/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a target="_blank" href="#contact" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+
+				</div>
+
+			</div>
+
+		<div id="main">
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+						<header>
+							<img src="images/PAF-550.png" alt="" />
+						</header>
+							<p>Un Pas Fragile is a student project realized during my first year in ENJMIN.</br> 
+							It narrates the story of Camille,</br> 
+							a young frog who is trying to learn life and how to dance !</br>
+							Each game panel is a step in her life, and an area of experimentation</br> with a quick and simple gameplay interaction.</br>
+							Un Pas Fragile was awarded Best Student Game at IGF 2017 !</p>
+							
+							<p>You can watch a walkthrough of the game here :</p>
+								
+								<iframe width="650" height="366" src="https://www.youtube.com/embed/DQanqXjFIac" frameborder="0" allowfullscreen></iframe>
+								</br>
+								</br>
+								
+								
+								
+							<p>My roles :
+								</br><b>-Audio conception through the development, talking interactions and meaning</b> 
+								</br><b>-Foley record (dance steps and movements, ambiances, other specific foleys)</b>
+								</br><b>-Audio assets design and management (format, listing and integration indications)</b>
+								</br><b>-Management of reduced time for audio integration (priorities depending on Construct 2, assets and their importance)</b>
+								</br>
+							
+								
+								</br>
+								<p>(Realised in 2015)</p>
+
+						</div>
+					</section>
+		</div>
+				
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Gaspard Morel - All rights reserved 2010-2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72368270-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
