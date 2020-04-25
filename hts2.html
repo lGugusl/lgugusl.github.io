@@ -7,7 +7,7 @@
 <html>
 
 	<head>
-		<title>Gaspard Morel - Bring it Back!</title>
+		<title>Gaspard Morel - How To Survive 2</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -62,6 +62,7 @@
 							<li><a target="_blank" href="https://soundcloud.com/gugus-2" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
 							<li><a target="_blank" href="https://fr.linkedin.com/pub/gaspard-morel/36/26b/7b/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a target="_blank" href="#contact" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/gaspanic4551/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
 
 
@@ -72,22 +73,35 @@
 		<div id="main">
 				<!-- About Me -->
 					<section id="about" class="three">
-						<div class="container">
+						<div class="container" style="display:inline-block; /*padding-right:30px;*/ text-align:justify;">
 
-						<header>
+						<header style="text-align: center;">
 							<img src="images/hts2default.jpg" alt="" />
 						</header>
-							<p>How To Survive 2 is a videogame developped by Eko Software, </br> 
-							a zombie hack'n slash released on Steam in September 2016.</br> 
-							I worked on this project as an Audio Designer, creating foleys, ambiances and </br>sound effects corresponding to the team's needs.</br>
-							I decided to tackle some audio integration problematics as well,</br>making use of the in-house engine and the programmer's time 
-							to</br>boost impact and the fun of the gameplay.</br>I had to be organized and communicate with efficiency on my work in order to </br>keep tasks and goals in accordance with my audio production and </br> the rest of the team.</p>
-						
-								</br>
-								</br>
+							<p>
+							How To Survive 2 is a videogame developped by Eko Software, a zombie hack'n slash released on Steam in September 2016.
+							I worked on this project as an Audio Designer, creating foleys, ambiances and sound effects corresponding to the team's needs. I decided to tackle some audio integration problematics as well, making use of the in-house engine and the programmer's time to boost impact and the fun of the gameplay.
+							I had to be organized and communicate with efficiency on my work in order to keep tasks and goals in accordance with my audio production and the rest of the team.
+							</p>
+
+							<p>
+							My decision as a final goal was to focus on getting a sense of space and impact to different actions, something the game lacked of when I arrived. First, getting sounds to play around the player for ambiences (distant sound sources, randomness, layers for different states like rain and thunder), then having positions and attenuations calculated properly for sounds around the player like ennemies and their attacks. The existing syntax of the json files accessible to designers was a bit rough for sound and managing levels and distances, so I had to provide demands for values I could more comprehensively edit.</br>
+							Parrallel to the requested production (NPC sounds, UI Ambience, cutscenes), I also modified some of the original assets to fit better in a larger audio mix, offering more possibilities for a better dynamic since there was no volume sidechain or states possibilities, and also for breaking the weapon's sounds into different layers (adapting to gameplay situations).
+							</p>	
+					
+							<p>
+							Here is a video showcasing some of the UI, ambience and ennemies sounds:	
+							</br>
+							</br>
 								
 								<iframe width="650" height="366" src="https://www.youtube.com/embed/dxpHZVKJ2dk?start=85" frameborder="0" allowfullscreen></iframe>
 								</br>
+
+							
+							-About the UI, the goal was to reinforce an organic experience in this world where everything is built from scrapped materials. A lot of textures and manipulation sounds were the base materials to get the UI to tell a little story.</br>
+							-The ambience sounds had an adapted frequency range to not interfere too much with the enemies and attacks sounds, but being rich enough when the player simply explored the world, with a sense of space and aliveness.</br>
+							-Some new ennemies required new programming for how sounds were placed in the 3D scene as well, like this zombie pelican. Sound emitters are following the spit's particule effect emission and position, something I had to design with a programmer.
+							</p>
 								
 								</br>
 								<p>(Realised in 2016)</p>
@@ -101,7 +115,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Gaspard Morel - All rights reserved 2010-2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Gaspard Morel - All rights reserved 2010-2020.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>

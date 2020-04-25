@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<title>Gaspard Morel - Stay Silent</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lightbox.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							
+							<h1 id="title">Gaspard Morel</h1>
+							<p>Audio Designer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="/index.html#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Welcome</span></a></li>
+								<li><a href="/index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="/index.html#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="/index.html#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a target="_blank" href="https://twitter.com/soundingg" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="https://soundcloud.com/gugus-2" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
+							<li><a target="_blank" href="https://fr.linkedin.com/pub/gaspard-morel/36/26b/7b/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a target="_blank" href="#contact" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/gaspanic4551/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+
+
+				</div>
+
+			</div>
+
+		<div id="main">
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container" style="display:inline-block; /*padding-right:30px;*/ text-align:justify;">
+
+						<header style="text-align: center;">
+							<img src="images/V4_500.jpg" alt="" />
+						</header>
+
+							<p>Stay Silent is a VR strategic FPS (currently in Early Access) where players shoot at each other while using invisibility cloaking devices, and competing for map objectives.</br> 
+							I did most of the Audio work on this project, including design, production, tool design, integration, management, collaborating with programmers, with the help of a colleague for music composition, and another one for help with communication channels.</br> 
+							Using Unity and Wwise, I was responsible for carrying the Audio side of the project, responding to the team's development with Audio design, Audio systems and a workflow in VR.
+							</p>
+
+							<p>
+							The primary audio focus was put on guns and a variety of items and weapons, as well as a sense of space and using these to pinpoint your invisble opponent's location. Later in the proejct, UI and a slower pace became a larger part of the soundscape when the development leaned onto holograms and a skill system to use tools in a more strategy based shooter, but resulting in less interaction with the environment itself.</br>
+							VR design still being a challenge, on my end I had to find solutions for being able to integrate and iterate into Unity without relying too much on the programmer working with audio.</br>
+							Using Wwise within Unity, several things were made:</br>
+							</br>
+							-A use of Wwise Reflect and Auro3D plugins, to create dynamic early reflections and reverberation for weapons and props interactions using the geometry I would configure and give to Wwise in Unity, and have HRTF processing for a selection of audio buses.</br>
+							-Using Ambisonics format and processing for ambience backgrounds and specific emitters for feeling (mostly sounds located on the player and large sounds that benefit from an even energy spread).</br>
+							-Event and Switches structures to limit the number of Events and names for the programmer to manipulate.</br>
+							-Two main scripting tools to tackle the integration time and responsability problems, and the emitters performances when considering spatial position and reflections computations.</br>
+							-Multiple parameters to modify and blend sound layers being played alongside the player's gameplay, adding details for immersion during movement, filtering sources depending on the field of vision.
+							</p>
+							
+
+							</br> 
+
+							<p> You can follow <a href="/stay_silent_audio_summary.pdf">this link</a> to read about these designs and functions in more details, as well as audio development choices, within the limits of the NDA before the game's release.</p>
+
+								
+								
+							<p>Here are some isolated assets I created</p>
+							
+							<iframe width="60%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/806799220%3Fsecret_token%3Ds-3LY4xHwfu6o&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+
+								
+							</br> 
+
+
+								
+							</br>
+							<p>To be released mid-2020</p>
+
+						</div>
+					</section>
+		</div>
+				
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Gaspard Morel - All rights reserved 2010-2020.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lightbox.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72368270-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

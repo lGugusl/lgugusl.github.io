@@ -12,100 +12,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lightbox.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<style>
-				 #page-wrap {
-		  margin: 0 auto;
-		  position: relative;
-		  width: 980px;
-		}
 		
-		#gallery {
-		  display: table;
-		  margin: 0 auto;
-		}
-		#gallery li {
-		  float: left;
-		  margin: 10px 20px 0 0;
-		  position: relative;
-		}
-		/*#gallery span {
-		  background: rgba(0, 0, 0, 0.7);
-		  opacity: 0;
-		  padding: 10% 0;
-		  width: 100%;
-		  text-align: center;
-		  position: absolute;
-		  left: 0;
-		  bottom: 0;
-		  -moz-transition: opacity 0.6s ease-in;
-		  -o-transition: opacity 0.6s ease-in;
-		  -webkit-transition: opacity 0.6s ease-in;
-		}*/
-		
-		#gallery li:hover span {
-		  opacity: 1;
-		}
-		
-		#gallery a {
-		  /*border: 5px solid rgba(0, 0, 0, 0.1);*/
-		  display: block;
-		  position: relative;
-		  -moz-transition: border 0.6s ease-out;
-		  -webkit-transition: border 0.6s ease-out;
-		  transition: border 0.6s ease-out;
-		}
-		
-	/*:*#gallery a:hover {
-		
-		  border: 5px solid rgba(39, 25, 0, 1);
-		  border: 5px solid rgba(0, 0, 0, 0.5);
-		 
-		}*/
-		
-		#gallery a:focus {
-		  -moz-transform: rotate(-2deg);
-		  -webkit-transform: rotate(-2deg);
-		  transform: rotate(-2deg);
-		}
-		#gallery img {
-		  float: left;
-		}
-		#lightbox div {
-		  background: #fff;
-		  border: 30px solid #fff;
-		  opacity: 0;
-		  position: absolute;
-		  left: 0;
-		  top: 15%;
-		  z-index: 0;
-		  border-radius: 10px;
-		  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
-		  -webkit-transition: all 0.3s ease-out;
-		  -moz-transition: all 0.3s ease-out;
-		  transition: all 0.3s ease-out;
-		}
-		#lightbox div:target {
-		  opacity: 1;
-		  z-index:10
-		}
-		#lightbox img {
-		  float: left;
-		  border-radius: 3px;
-		}
-		#lightbox #img2 {
-		  left: 15%;
-		}
-		#lightbox a {
-		  background: url(images/close.png) no-repeat left top;
-		  height: 28px;
-		  width: 30px;
-		  position: absolute;
-		  top: -42px;
-		  right: -42px;
-		}
-		</style>
 	</head>
 	<body>
 
@@ -154,6 +64,7 @@
 							<li><a target="_blank" href="https://soundcloud.com/gugus-2" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li>
 							<li><a target="_blank" href="https://fr.linkedin.com/pub/gaspard-morel/36/26b/7b/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a target="_blank" href="#contact" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/gaspanic4551/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						</ul>
 
 
@@ -164,66 +75,61 @@
 		<div id="main">
 				<!-- About Me -->
 					<section id="about" class="three">
-						<div class="container">
+						<div class="container" style="display:inline-block; /*padding-right:30px;*/ text-align:justify;">
 
-						<header>
+						<header style="text-align: center;">
 							<img src="images/banniereApop4.png" alt="" />
 						</header>
 						
-							<p>Apoptosis is a student project realized during my first year in ENJMIN, </br>
+							<p>
+								Apoptosis is a student project realized during my first year in ENJMIN,
 							and is a narrative and interactive experience playable for 10 minutes.</br>
-							It was made by a team of 4 people, with François Rizzo as the Game Designer, Lucien Catonnet who programmed the engine and the game, Marjolaine Paz, responsible for the visual direction and the production of graphic assets, and myself.</p>
-							</br>
+							It was made by a team of 4 people, with François Rizzo as the Game Designer, Lucien Catonnet who programmed the engine and the game, Marjolaine Paz, responsible for the visual direction and the production of graphic assets, and myself.
+							</p>
+
+								</br>
+
+							<p style="text-align: center;">
 								<iframe  width="650" height="366" src="https://www.youtube.com/embed/tMwTOBmPpXQ" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+							</p>
+
 								</br>
+
+							<p>
+								You can download an installer (English or French) and play it for yourself <a href="http://lutopia.itch.io/apoptosis">at this adress.</a>
+							</p>
+
 								</br>
-								<p>You can download an installer (English or French) and play it for yourself <a href="http://lutopia.itch.io/apoptosis">at this adress.</a></p>
-								</br>
-							<p>My roles :
+
+							<p>
+								My roles :
 								</br><b>-Audio design</b>
+								</br><b>-Voice and foley recording</b>
+								</br><b>-Wwise use with a proprietary game-engine</b>
+								</br><b>-Musical composition</b>						
 								</br><b>-Development of interactive sound solutions with PureData software </b>(granular synthesis patch, made of two overlapping grain-generators based on 2 samples, and sent into an envelop shaper. This patch was compilated with the magnificent solution developped by the <a href="https://enzienaudio.com">Heavy Audio Tools</a> people, and used in Wwise with various RTPC modulating the sound)
+
 								
 								<div id="page-wrap">
-											<div id="lightbox">
-												<div id="img1">
-													<img src="images/PD-Apoptosis-1.png" width="950
-												" alt="" />
-													<a class="close" href="#"></a>
-												</div>
-												<div id="img2">
-													<img src="images/PD-Apoptosis-2.png" width="496" alt="" />
-													<a class="close" href="#"></a>
-												</div>
+											<div id="image-row">
+
+												<a class="gallery-image" href="images/PD-Apoptosis-1.png" data-lightbox="Bib-gallery" data-title="General view of the PureData patch, with the parameters inlets linked to values for the grain generator subpatches, and the samples preview"><img class="gallery-image_small" src="images/PD-Apoptosis-1-small.png" alt="State composition">
+												</a>
+
+												<a class="gallery-image" href="images/PD-Apoptosis-2.png" data-lightbox="Bib-gallery" data-title="The grain generator subpatch"><img class="gallery-image_small" src="images/PD-Apoptosis-2-small.png" alt="Footstep composition">
+												</a>
+													
+												
 											</div>
-										
-											<ul id="gallery">
-											<li>
-											  <a class="clearfix" href="#img1">
-												<img src="images/PD-Apoptosis-1-small.png" alt="PureData1" width="140" />
-											
-											  </a>
-											</li>
-											<li>
-											  <a class="clearfix" href="#img2">
-												<img src="images/PD-Apoptosis-2-small.png" alt="PureData2" width="47" />
-											
-											  </a>
-											</li>
-									
-											</ul>
 								</div>
 								
-								</br>The idea was to obtain an evocative sound aesthetic in accordance with the visual design and the game design. As the story develops, the ambience and music are slowly developing, and the sound focus is put on the voice and the player's interactions. 
-								</br><b>-Voice and foley recording</b>
-								
-								</br><b>-Wwise use with a proprietary game-engine</b>
-								</br><b>-Musical composition</b></p>
-								</br>
-								
-								
-								
-								
-								</br>
+								<p>
+									The idea was to obtain an evocative sound aesthetic in accordance with the visual design and the game design. As the story develops, the ambience and music are slowly developing, and the sound focus is put on the voice and the player's interactions. 
+								</p>
+
+									</br>
+									</br>
+
 								<p>(Realised in 2015)</p>
 
 						</div>
@@ -235,7 +141,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Gaspard Morel - All rights reserved 2010-2015.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Gaspard Morel - All rights reserved 2010-2020.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>
@@ -248,6 +154,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lightbox.js"></script>			
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
