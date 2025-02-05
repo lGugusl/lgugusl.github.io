@@ -2416,12 +2416,13 @@
 				}
 
 					#headerToggle .toggle:before {
-						font-family: 'Source Sans Pro', sans-serif; /* FontAwesome; */
+						font-family: FontAwesome;
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
+						font: var(--fa-font-solid);
 						content: '\f0c9';
 						color: #fff;
 						font-size: 18px;
