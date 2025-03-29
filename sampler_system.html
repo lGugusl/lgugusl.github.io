@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+	<head>
+		<title>Gaspard Morel - Wwise music system additions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lightbox.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							
+							<h1 id="title">Gaspard Morel</h1>
+							<p>Technical Audio Designer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="/main.html#top" id="top-link" class="skel-layers-ignoreHref"><span class ="icon">Welcome</span></a></li>
+								<li><a href="/main.html#activity" id="portfolio-link" class="skel-layers-ignoreHref"><span class ="icon">Personal activities</span></a></li>
+								<li><a href="http://lgugusl.github.io/#portfolio-p" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon">Portfolio</span></a></li>
+								<li><a href="http://lgugusl.github.io/#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon">About Me</span></a></li>
+								<li><a href="http://lgugusl.github.io/#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon">Contact</span></a></li>
+							</ul>
+
+
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a target="_blank" href="https://mastodon.social/@MetricMartyr" class="fa-brands fa-mastodon"></a></li>
+							<!-- <li><a target="_blank" href="https://soundcloud.com/gugus-2" class="icon fa-soundcloud"><span class="label">SoundCloud</span></a></li> -->
+							<li><a target="_blank" href="http://linkedin.com/in/gm89" class="fa-brands fa-linkedin"></a></li>
+							<li><a target="_blank" href="#contact" class="fa-solid fa-envelope"></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/gaspanic4551/" class="fa-brands fa-instagram"></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+
+		<div id="main">
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container" style="display:inline-block; /*padding-right:30px;*/ text-align:justify;">
+
+						<header style="text-align: center;">
+							<img src="images/preview_music.png" alt="" />
+						</header>
+
+							<p>This is a component of an interactive music implementation used on an unreleased project, resulting from its gameplay structure and the breakbeat/bruk style that we were exploring.</br>
+							The goal was to have the capability to play random samples on the beat, and not a virtual instrument being driven by a MIDI track. It should serve the player fantasy and complement the generative style of the visuals we had at the time.
+							</p>
+
+							<div id="page-wrap">
+											<div id="image-row">
+
+												<a class="gallery-image" href="images/flow_graph.png" data-lightbox="Bib-gallery" data-title="graph view of a the Intensity value through a cunk of gameplay as it was during this project"><img class="gallery-image_small" src="images/flow_graph_small.png" alt="State composition">
+												</a>
+													
+											</div>
+							</div>
+
+							</br>
+							<p>The Audio team and myself devised a set of rules for when to emphasise player actions and rewards with music. The idea was to have traditional layers coming in and out relying on an Intensity (or "coolness") value, but with every action used to make this value go up also posting events playing samples on the beat.</p>
+							
+							<p style="text-align: center;" >
+							<iframe width="650" height="366" src="https://www.youtube.com/embed/8RvDx-lJDCk" frameborder="0" allowfullscreen></iframe>
+							</p>
+							<p style="font-size: 12pt; font-style: italic;">(disclaimer: this video shows functionality and the audible result shown here is less complex and less qualitative than what was cut and mixed together at the time. Original composed content is under NDA)</p>
+							</br> 
+
+												
+							<p>The nature of bruk music makes this easy as the beat loops are constantly being layered, while samples punctuate the track.</br>
+							The particularity of this setup is the use of a short MIDI note file repeated every beat in the music container, targeting a Switch container in the Actors Mixers hierarchy.</p>
+							
+							<p style="text-align: center;" >
+							<img src="images/Midi_track.png" alt="midi track" />
+							</p>
+							<p style="text-align: center;" >
+							<img src="images/MIDI_link.png" alt="Linked container" />
+							</p>
+
+							</br> 
+
+							<p>By default, the Switch value plays a silent sound. But when an action gets rewarded with a sample, the Switch value shifts to a "small" or "big" sample, then back to the default value.</p>
+								
+							</br>
+
+							<p style="text-align: center;" >
+							<img src="images/Sample_switch.png" alt="Samples switch group" />
+							</p>
+							<p style="text-align: center;" >
+							<img src="images/Sample_event1.png" alt="Sample event action 1" />
+							</p>
+							<p style="text-align: center;" >
+							<img src="images/Sample_event2.png" alt="Sample event action 2" />
+							</p>
+
+							</br>
+
+							<p>Time delays are based on bar divisions and the music tempo, managed in milliseconds. The goal is to have the Switch value calling a sample to play on the next single beat, but not before, and not after (and get two samples with one event trigger).</p>
+
+							</br>
+
+							<p>As seen in the video, traditional stingers were used for very big gameplay events that raised our Intensity score by a lot. Overall it is forcing Wwise into a sampler tied to its Music tick, and it can be a bit challenging to iterate on as a change in tempo, number of bars within music segments or the amount of segments and containers require manual editing using the now dated Music timeline editor.</br>
+							The advantage is that it is easy to build upon and around it using Wwise's music tools (tracks types, transitions, filters following RTPCs etc) and mixing to expand and fine tune the experience.</p>
+
+							</br>
+
+							<p>On the Engine side (here Unreal engine), collaboration with Code allowed for custom nodes to call Data Assets compiling different set of options for the Intensity score.</p>
+
+							</br>
+
+							<p style="text-align: center;" >
+							<img src="images/UE_IntensityEvent.png" alt="Unreal intensity Event node" />
+							</p>
+							<p style="text-align: center;" >
+							<img src="images/UE_IntensityEvent_DA.png" alt="Unreal Data asset" />
+							</p>
+
+							</br>
+
+							<p>Adding these nodes alongside other sound events and parameter implementation made it really flowing and linked with the rest of the game’s Audio logic, but also made it integrated with other logic for a very controlled system within the gameplay loops.</br>
+							The Intensity value follows a Curve Asset and while the player action makes the value go up or hold, time is what makes the value go down.</br>
+							Some options shown here included different types of actions on the Intensity value (increase, hold or both), a hold time and a limit to avoid some actions being spammed and increasing the Intensity level too artificially.
+							</p>
+
+						</div>
+					</section>
+		</div>
+				
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Gaspard Morel - All rights reserved 2010-2025.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lightbox.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72368270-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
